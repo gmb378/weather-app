@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="Boom.js" defer></script>
+</head>
+<body>
+    <!-- Main -->
+    <main class="main-content">
+      <!-- Search / Header Section -->
+      <header class="search-header">
+        <input
+          type="text"
+          id="searchCity"
+          placeholder="Search for city or ZIP"
+          aria-label="Search for city or ZIP"
+        />
+        <button id="searchBtn">Search</button>
+      </header>
+
+      <!-- Current Weather & Basic Info -->
+      <section class="current-weather">
+        <div class="current-info">
+          <h1 id="cityName">City Name</h1>
+          <p id="conditionText">Condition: <span>--</span></p>
+          <p id="chanceOfRain">Chance of Rain: <span>--%</span></p>
+          <h2 id="temperature">--°</h2>
+          <img
+            id="currentIcon"
+            src=""
+            alt="weather icon"
+            style="display: none;"
+          />
+        </div>
+      </section>
+
+      <!-- Today's Hourly Forecast -->
+      <section class="hourly-forecast">
+        <h3>Today's Forecast</h3>
+        <div class="hourly-container" id="todayHourly">
+        </div>
+      </section>
+
+      <!-- Air Conditions -->
+      <section class="air-conditions">
+        <h3>Air Conditions</h3>
+        <p>Real Feel: <span id="realFeel">--</span></p>
+        <p>Humidity: <span id="humidity">--%</span></p>
+        <p>Wind: <span id="windSpeed">--</span></p>
+        <p>UV Index: <span id="uvIndex">--</span></p>
+      </section>
+    </main>
+
+    <!-- 7-Day Forecast Section -->
+    <aside class="weekly-forecast">
+      <h3>7 Day Forecast</h3>
+      <div class="forecast-list" id="forecastList">
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
